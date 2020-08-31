@@ -58,3 +58,5 @@ class CalculatorView {
     }
 
 }
+
+export default CalculatorView

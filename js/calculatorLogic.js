@@ -16,3 +16,5 @@ class CalculatorLogic {
         return parseFloat(result.toPrecision(12))
     }
 }
+
+export default CalculatorLogic

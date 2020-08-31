@@ -33,8 +33,14 @@
             <span id="multiple" class="operator" onclick="calculatorObject.pressOperator('multiple')">x</span>
         </div>
     </div>
-    <script type="text/javascript" src="js/calculatorLogic.js"></script>
-    <script type="text/javascript" src="js/calculatorView.js"></script>
+    <script type="module">
+        import CalculatorLogic from '/js/calculatorLogic.js'
+        window.CalculatorLogic = CalculatorLogic
+    </script>
+    <script type="module">
+        import CalculatorView from '/js/calculatorView.js'
+        window.CalculatorView = CalculatorView
+    </script>
     <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
