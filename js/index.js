@@ -1,5 +1,6 @@
 let x = 0
 let y = 0
+let dot = false
 
 let operator = null
 
@@ -10,11 +11,28 @@ const onLoad = () => {
 
 const pressNumber = (number) => {
     if (operator){
-        y = y * 10 + number
+        if (dot){
+            y = Number(`${y}${number}` )
+        } else{
+            y = y * 10 + number
+        }
         handleUpdateScreen(y)
-    }else {
-        x = x*10 + number
+    } else {
+        if (dot) {
+            x = Number(`${x}${number}`)
+        } else {
+            x = x * 10 + number
+        }
         handleUpdateScreen(x)
+    }
+}
+
+const pressDot = () => {
+    dot = true
+    if (operator) {
+        y = `${y}.`
+    }else{
+        x = `${x}.`
     }
 }
 
@@ -59,6 +77,7 @@ const handleEval = () => {
         default:
             break;
     }
+    result = parseFloat(result.toPrecision(12))
 
     x = result;
     y = 0;
