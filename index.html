@@ -5,7 +5,7 @@
     <title>Calculator</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body onload="onLoad()">
     <div id="calculator">
         <!-- Screen and clear key -->
         <div class="top">
@@ -15,19 +15,19 @@
 
         <div class="keys">
             <!-- operators and other keys -->
-            <span>7</span>
-            <span>8</span>
-            <span>9</span>
+            <span onclick="pressNumber(7)">7</span>
+            <span onclick="pressNumber(8)">8</span>
+            <span onclick="pressNumber(9)">9</span>
             <span class="operator">+</span>
-            <span>4</span>
-            <span>5</span>
-            <span>6</span>
+            <span onclick="pressNumber(4)">4</span>
+            <span onclick="pressNumber(5)">5</span>
+            <span onclick="pressNumber(6)">6</span>
             <span class="operator">-</span>
-            <span>1</span>
-            <span>2</span>
-            <span>3</span>
+            <span onclick="pressNumber(1)">1</span>
+            <span onclick="pressNumber(2)">2</span>
+            <span onclick="pressNumber(3)">3</span>
             <span class="operator">÷</span>
-            <span>0</span>
+            <span onclick="pressNumber(0)">0</span>
             <span>.</span>
             <span class="eval">=</span>
             <span class="operator">x</span>
