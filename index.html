@@ -5,7 +5,7 @@
     <title>Calculator</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body onload="onLoad()">
+<body>
     <div id="calculator">
         <!-- Screen and clear key -->
         <div class="top">
@@ -33,14 +33,6 @@
             <span id="multiple" class="operator" onclick="calculatorObject.pressOperator('multiple')">x</span>
         </div>
     </div>
-    <script type="module">
-        import CalculatorLogic from '/js/calculatorLogic.js'
-        window.CalculatorLogic = CalculatorLogic
-    </script>
-    <script type="module">
-        import CalculatorView from '/js/calculatorView.js'
-        window.CalculatorView = CalculatorView
-    </script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="build/main.js"></script>
 </body>
 </html>

@@ -48,3 +48,6 @@ Temporary Items
 .idea
 
 js/index.backup.js
+
+node_modules
+build
